@@ -31,10 +31,10 @@ A structured collection of **Object-Oriented Programming concepts** implemented 
 | Folder | Concept Covered | What's Inside |
 |--------|---------------|---------------|
 | [`Abstraction`](./Abstraction) | Data hiding & abstract classes | Interfaces, pure virtual functions, implementation hiding |
-| [`Error Handling`](./Error Handling) | Exceptions & robustness | `try-catch`, `throw`, custom exception classes |
-| [`File Handling`](./File Handling) | Persistence & streams | `fstream`, binary/text I/O, serialization patterns |
+| [`Error Handling`](./Error%20Handling) | Exceptions & robustness | `try-catch`, `throw`, custom exception classes |
+| [`File Handling`](./File%20Handling) | Persistence & streams | `fstream`, binary/text I/O, serialization patterns |
 | [`Inheritance`](./Inheritance) | IS-A relationships | Single, multilevel, multiple, hierarchical, hybrid |
-| [`Lab Code`](./Lab Code) | Weekly lab submissions | UET coursework — constructors, destructors, basic classes |
+| [`Lab Code`](./Lab%20Code) | Weekly lab submissions | UET coursework — constructors, destructors, basic classes |
 | [`Math in cpp`](./Math%20in%20cpp) | Numerical computing | Operator overloading for complex numbers, matrix ops |
 | [`Mingled`](./Mingled) | Mixed concepts | Programs combining multiple OOP pillars in one |
 | [`OOP Assignments of my University`](./OOP%20Assignments%20of%20my%20University) | Semester deliverables | Complete assignment solutions with documentation |
