@@ -10,7 +10,7 @@ public:
     
     // Overload + operator
     Complex operator + (const Complex& other) {
-        return Complex(real + other.real, imag + other.imag);
+        return Complex(this->real + other.real, imag + other.imag);
     }
     
     // Overload << for easy printing

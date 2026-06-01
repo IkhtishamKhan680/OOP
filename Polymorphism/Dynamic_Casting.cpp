@@ -32,7 +32,7 @@ int main() {
             cout << "Index " << i << " is a Dog: ";
             d->fetch();
         }
-        else if (Cat* c = dynamic_cast<<Cat*>(zoo[i])) {
+        else if (Cat* c = dynamic_cast<Cat*>(zoo[i])) {
             cout << "Index " << i << " is a Cat: ";
             c->climb();
         }

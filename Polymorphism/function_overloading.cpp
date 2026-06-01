@@ -27,7 +27,7 @@ int main() {
     cout << calc.add(5, 10) << endl;           // int
     cout << calc.add(2.5, 3.5) << endl;        // double
     cout << calc.add(1, 2, 3) << endl;         // 3 args
-    cout << calc.add("Hello", "World") << endl; // string
+    cout << calc.add("Hello ", "World") << endl; // string
     
     return 0;
 }
