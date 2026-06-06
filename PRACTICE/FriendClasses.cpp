@@ -14,6 +14,7 @@ public:
     friend class Auditor;
 };
 class Auditor{
+  public:
   void showOwner( BankAccount& a){
     cout<<"Owner is :"<<a.owner<<endl;
   }   

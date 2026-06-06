@@ -7,7 +7,7 @@ class BankAccount{
     double balance;
     
     public:
-    BankAccount(string name, double amount):// constructor 9 argument 0
+    BankAccount(string name, double amount):
     owner(name), balance(amount) {}
 
     friend void printDetail(const BankAccount& acc);
