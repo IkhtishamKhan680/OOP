@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 class StringWrapper {
@@ -6,13 +7,11 @@ private:
     char* str;
 public:
     StringWrapper(const char* s = "") {
-        // simplistic constructor for demonstration
         str = new char[100];
         strcpy(str, s);
     }
     ~StringWrapper() { delete[] str; }
 
-    // Overload logical NOT (!)
     bool operator!() const {
         return (str == nullptr || str[0] == '\0');
     }

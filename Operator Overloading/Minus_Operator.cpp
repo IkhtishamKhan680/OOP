@@ -7,9 +7,7 @@ private:
 public:
     Number(int v = 0) : value(v) {}
 
-    // Overload unary minus (-)
     Number operator-() const {
-        // Create a new Number with negated value
         return Number(-value);
     }
 
@@ -20,7 +18,7 @@ public:
 
 int main() {
     Number n1(10);
-    Number n2 = -n1;   // Calls operator- on n1
+    Number n2 = -n1;   
 
     n1.display();      // 10
     n2.display();      // -10
