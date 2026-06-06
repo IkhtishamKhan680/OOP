@@ -7,9 +7,9 @@ private:
 public:
     Complex(double r = 0, double i = 0) : real(r), imag(i) {}
 
-    // Overload + as a member function
+
     Complex operator+(const Complex& other) const {
-        // Create and return a new Complex object as the sum
+
         return Complex(real + other.real, imag + other.imag);
     }
 
@@ -20,7 +20,7 @@ public:
 
 int main() {
     Complex c1(3, 4), c2(1, 2);
-    Complex c3 = c1 + c2;   // c1.operator+(c2)
-    c3.display();            // 4 + 6i
+    Complex c3 = c1 + c2;   
+    c3.display();          
     return 0;
 }

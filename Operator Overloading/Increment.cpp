@@ -6,18 +6,13 @@ class Counter
 public:
     int count;
     Counter(int c = 0) : count(c) {}
-    // Prefix ++c  (no argument)
     Counter operator++()
     {
-        // count++;
         return Counter(++count);
     }
-    // Postfix c++  (dummy int argument tells C++ it's postfix)
     Counter operator++(int)
     {
-        // Counter temp = *this;  // save old value
-        // count++;
-        return Counter(count++); // return old value
+        return Counter(count++); 
     }
     void display()
     {
@@ -33,6 +28,7 @@ int main()
     c1++; // count = 7
     c2.display();
     c1.display();
+    return 0;
 }
 // ## The Rules — What You Can & Can't Do
 
