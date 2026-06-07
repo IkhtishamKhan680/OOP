@@ -4,7 +4,6 @@
 #include <vector>
 using namespace std;
 
-// ─── HTTP-style exceptions ──────────────────────────────────────────────
 class HttpException : public runtime_error {
     int statusCode_;
 public:
@@ -29,7 +28,6 @@ public: InternalServerException(const string& detail)
     : HttpException(500, "Internal Server Error: " + detail) {}
 };
 
-// ─── Request processing ──────────────────────────────────────────────────
 struct Request { string method, path, token, body; };
 struct Response { int status; string body; };
 
@@ -45,7 +43,6 @@ Response handleRequest(const Request& req) {
     throw NotFoundException(req.path);
 }
 
-// ─── Middleware-style exception handler ──────────────────────────────────
 Response safeHandle(const Request& req) noexcept {
     try {
         return handleRequest(req);
@@ -67,7 +64,7 @@ int main() {
         {"GET",  "/api/users", "",          ""},   // 401
         {"GET",  "/api/admin", "token123", ""},   // 404
         {"POST", "/api/users", "token123", "{}"},  // 200 OK
-        {"PUT",  "/api/data",  "token123", ""},   // 400 Bad Method
+        {"PUT",  "/api/data",  "token123", ""},   // this is 400 Bad Method
     };
     for (auto& req : requests) {
         auto res = safeHandle(req);
