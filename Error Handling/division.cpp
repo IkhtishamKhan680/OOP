@@ -7,11 +7,12 @@ int main(){
     cout<<"Enter value for a & b"; cin>>a>>b;
     try{
         if(b==0)
-        throw b;
-        cout<<"Result ="<<a/b<<endl;
+        throw invalid_argument("Division by zero is not allowed it's infinity bro !!");
+        cout<<"Result :"<<a/b<<endl;
+        // cout<<"Result ="<<a/b<<endl;
     }
-    catch(int x){
-        cout<<"Division by zero is not allowed it's infinity bro !!"<<endl;
+    catch(const invalid_argument& e){
+        cout<<"Error: "<<e.what()<<endl;
     }
     return 0;
 }
